@@ -43,8 +43,7 @@ class KeyTransactionEndpoint(OrganizationEventsV2EndpointBase):
 
                 KeyTransaction.objects.create(**base_filter)
                 return Response(status=201)
-            else:
-                return Response(serializer.errors, status=400)
+            return Response(serializer.errors, status=400)
 
     def get(self, request, organization):
         """ Get the Key Transactions for a user """
