@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 type Props = {
-  hasImage: boolean | undefined;
-  centered: boolean | undefined;
+  hasImage?: boolean | undefined;
+  centered?: boolean | undefined;
   children: React.ReactNode;
   theme?: any;
 };
