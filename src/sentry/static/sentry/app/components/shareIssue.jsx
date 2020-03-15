@@ -186,7 +186,7 @@ class ShareIssue extends React.Component {
   };
 
   // State of confirm modal so we can keep dropdown menu opn
-  handleConfirmCancel = e => (this.hasConfirmModal = false);
+  handleConfirmCancel = () => (this.hasConfirmModal = false);
   handleConfirmReshare = () => (this.hasConfirmModal = true);
 
   render() {

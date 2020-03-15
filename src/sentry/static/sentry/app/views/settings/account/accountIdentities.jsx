@@ -26,7 +26,7 @@ class AccountIdentities extends AsyncView {
     };
   }
 
-  handleDisconnect = (identity, e) => {
+  handleDisconnect = identity => {
     const {identities} = this.state;
 
     this.setState(

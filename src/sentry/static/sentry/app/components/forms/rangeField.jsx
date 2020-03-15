@@ -46,12 +46,12 @@ export default class RangeField extends InputField {
       suffixClassNames += ' disabled';
     }
     $(ReactDOM.findDOMNode(this.refs.input))
-      .on('slider:ready', (e, data) => {
+      .on('slider:ready', (_e, data) => {
         const value = parseInt(data.value, 10);
         $value.appendTo(data.el);
         $value.html(this.props.formatLabel(value));
       })
-      .on('slider:changed', (e, data) => {
+      .on('slider:changed', (_e, data) => {
         const value = parseInt(data.value, 10);
         $value.html(this.props.formatLabel(value));
         this.setValue(value);
